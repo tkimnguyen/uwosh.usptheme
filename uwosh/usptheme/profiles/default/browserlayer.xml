@@ -1,0 +1,4 @@
+<layers>
+    <layer name="uwosh.usptheme" 
+           interface="uwosh.usptheme.interfaces.IUSPThemeLayer" />
+</layers>

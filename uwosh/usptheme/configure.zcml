@@ -1,0 +1,35 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="uwosh.usptheme">
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <browser:viewlet
+        name="plone.global_sections"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".DropdownMenuViewlet"
+        layer=".interfaces.IUSPThemeLayer"
+        permission="zope2.View"
+        />
+  <browser:viewlet
+        name="plone.searchbox"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".SearchBoxViewlet"
+        layer=".interfaces.IUSPThemeLayer"
+        permission="zope2.View"
+        />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="uwosh.usptheme"
+      directory="profiles/default"
+      description="Installs the uwosh.usptheme package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  <!-- -*- extra stuff goes here -*- -->
+  
+</configure>
