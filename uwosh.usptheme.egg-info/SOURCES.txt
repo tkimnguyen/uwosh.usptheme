@@ -1,6 +1,10 @@
 README.txt
 setup.cfg
 setup.py
+docs/HISTORY.txt
+docs/INSTALL.txt
+docs/LICENSE.GPL
+docs/LICENSE.txt
 uwosh/__init__.py
 uwosh.usptheme.egg-info/PKG-INFO
 uwosh.usptheme.egg-info/SOURCES.txt
@@ -12,5 +16,10 @@ uwosh.usptheme.egg-info/paster_plugins.txt
 uwosh.usptheme.egg-info/requires.txt
 uwosh.usptheme.egg-info/top_level.txt
 uwosh/usptheme/__init__.py
+uwosh/usptheme/configure.zcml
+uwosh/usptheme/dropdown_sections.pt
 uwosh/usptheme/interfaces.py
+uwosh/usptheme/searchbox.pt
 uwosh/usptheme/tests.py
+uwosh/usptheme/profiles/default/browserlayer.xml
+uwosh/usptheme/profiles/default/metadata.xml
